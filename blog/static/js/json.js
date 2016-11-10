@@ -1,5 +1,8 @@
 function output(inp) {
-    document.getElementById('api').appendChild(document.createElement('pre')).innerHTML += inp;
+    var obj = document.createElement('pre');
+    obj.style.cssText = 'border:0px';
+
+    document.getElementById('api').appendChild(obj).innerHTML += inp;
 }
 
 function syntaxHighlight(json) {
