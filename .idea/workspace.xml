@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da20548a-153e-4cd0-ac12-241d14dc165e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/css/sb-admin.css" afterPath="$PROJECT_DIR$/blog/static/css/sb-admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/js/json.js" afterPath="$PROJECT_DIR$/blog/static/js/json.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/startbootstrap-sb-admin-master/api.html" afterPath="$PROJECT_DIR$/blog/templates/startbootstrap-sb-admin-master/api.html" />
     </list>
     <ignored path="django.iws" />
@@ -90,8 +88,8 @@
       <file leaf-file-name="api.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/templates/startbootstrap-sb-admin-master/api.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+            <state relative-caret-position="302">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -870,7 +868,14 @@
       <option name="project" value="LOCAL" />
       <updated>1478794361161</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="api 프레임 설정">
+      <created>1478799011155</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1478799011155</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -913,7 +918,8 @@
     <MESSAGE value="view 작성" />
     <MESSAGE value="재정렬" />
     <MESSAGE value="파일 정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="파일 정리" />
+    <MESSAGE value="api 프레임 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="api 프레임 설정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1300,8 +1306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/startbootstrap-sb-admin-master/api.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        <state relative-caret-position="302">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding />
         </state>
       </provider>
