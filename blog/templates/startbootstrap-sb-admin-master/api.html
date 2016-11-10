@@ -1,6 +1,9 @@
+<!-- 기본 페이지 -->
 {% extends 'startbootstrap-sb-admin-master/index.html' %}
+<!-- 정적 파일 로드 -->
 {% load staticfiles %}
 
+<!-- 컨텐츠 시작 -->
 {% block content %}
 <!-- Page Heading -->
 <div class="row">
@@ -14,8 +17,23 @@
                 <i class="fa fa-dashboard"></i> 자주 사용하는 API를 모아두어 쉽게 호출해보는 페이지
             </li>
         </ol>
-        <div id="api"></div>
-        <script src="{% static 'js/json.js' %}"></script>
+        <table width="100%">
+            <thead>
+            <tr>
+                <th width="10%"><center>API</center></th>
+                <th width="90%"><center>JSON</center></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td>
+                    <div id="api"></div>
+                    <script src="{% static 'js/json.js' %}"></script>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 <!-- /.row -->
