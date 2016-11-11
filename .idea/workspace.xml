@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="da20548a-153e-4cd0-ac12-241d14dc165e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/css/sb-admin.css" afterPath="$PROJECT_DIR$/blog/static/css/sb-admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/startbootstrap-sb-admin-master/api.html" afterPath="$PROJECT_DIR$/blog/templates/startbootstrap-sb-admin-master/api.html" />
     </list>
     <ignored path="django.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,8 +87,8 @@
       <file leaf-file-name="api.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/templates/startbootstrap-sb-admin-master/api.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18947369">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.5754386">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -532,12 +532,6 @@
       <option name="number" value="Default" />
       <updated>1476853613423</updated>
     </task>
-    <task id="LOCAL-00001" summary="urls 추가">
-      <created>1478507320552</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1478507320552</updated>
-    </task>
     <task id="LOCAL-00002" summary="urls 추가">
       <created>1478507325837</created>
       <option name="number" value="00002" />
@@ -826,7 +820,13 @@
       <option name="project" value="LOCAL" />
       <updated>1478829284587</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="테이블 설정">
+      <created>1478830475288</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1478830475303</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1256,8 +1256,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/startbootstrap-sb-admin-master/api.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18947369">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.5754386">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding />
         </state>
       </provider>
