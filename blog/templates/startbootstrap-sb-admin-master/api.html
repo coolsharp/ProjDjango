@@ -20,13 +20,49 @@
         <table class="table" width="100%">
             <thead class="thead-inverse">
             <tr>
-                <th width="10%"><center><div class="bg-success">API</div></center></th>
-                <th width="90%"><center><div class="bg-danger text-white">JSON</div></center></th>
+                <th width="10%">
+                    <center>
+                        <div class="bg-success">API</div>
+                    </center>
+                </th>
+                <th width="90%">
+                    <center>
+                        <div class="bg-danger text-white">JSON</div>
+                    </center>
+                </th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td></td>
+                <td>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th rowspan="2">영역</th>
+                            <th>API</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td rowspan="5">인트로</td>
+                            <td>Event</td>
+                        </tr>
+                        <tr>
+                            <td>Utility co</td>
+                        </tr>
+                        <tr>
+                            <td>State name</td>
+                        </tr>
+                        <tr>
+                            <td>State name</td>
+                        </tr>
+                        <tr>
+                            <td>State name</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </td>
                 <td>
                     <div id="api"></div>
                     <script src="{% static 'js/json.js' %}"></script>
