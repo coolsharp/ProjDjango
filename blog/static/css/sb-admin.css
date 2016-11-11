@@ -239,22 +239,22 @@ table {
 
 td,
 th {
-  border: 1px solid Black;
+  border: 1px solid Gainsboro;
   padding: 5px 15px;
 }
 
 thead > tr:nth-child(1) > th:nth-child(1) {
-  background-color: Orchid;
+  background-color: GhostWhite;
 }
 
 thead > tr:nth-child(1) > th:nth-child(2) {
-  background-color: YellowGreen;
+  background-color: GhostWhite;
 }
 
 thead > tr:nth-child(1) > th:nth-child(3) {
-  background-color: Orange;
+  background-color: LightGoldenRodYellow;
 }
 
 thead > tr:nth-child(2) > th {
-  background-color: Gold;
+  background-color: LightBlue;
 }
