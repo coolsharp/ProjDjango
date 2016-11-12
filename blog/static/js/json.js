@@ -6,7 +6,7 @@ function printPre(elementId, json) {
 }
 
 function prettyJson(data) {
-    return syntaxHighlight(JSON.stringify(data, undefined, 4));
+    return syntaxHighlight(JSON.stringify(JSON.parse(data), undefined, 4));
 }
 
 function syntaxHighlight(json) {
@@ -27,5 +27,3 @@ function syntaxHighlight(json) {
         return '<span class="' + cls + '">' + match + '</span>';
     });
 }
-
-printPre('api', prettyJson({a:1, 'b':'foo', c:[false,'false',null, 'null', {d:{e:1.3e5,f:'1.3e5'}}]}));
