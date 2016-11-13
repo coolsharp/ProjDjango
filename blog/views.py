@@ -31,7 +31,7 @@ def post_new(request):
 
 # 크로스 도메인 문제를 해결하기 위해 API에서 호출
 def getApi(request):
-    url = int(request.GET.get('url', ''))
+    url = request.GET.get('url', '')
     r = requests.get(url, stream=True)
 
     return HttpResponse(r.text)

@@ -5,6 +5,9 @@
 
 <!-- 컨텐츠 시작 -->
 {% block content %}
+
+<script src="{% static 'js/json.js' %}"></script>
+
 <!-- Page Heading -->
 <div class="row">
     <div class="col-lg-12">
@@ -57,7 +60,9 @@
                             <td>State name</td>
                         </tr>
                         <tr>
-                            <td>State name</td>
+                            <td>
+                                <Input type="button" onclick="getApi()"/>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
@@ -72,6 +77,11 @@
     </div>
 </div>
 <!-- /.row -->
-<script src="{% static 'js/json.js' %}"/>
-<!--printPre('api', prettyJson(''));-->
+<script>
+    function getApi() {
+        $.get( "get/api/?url=https%3A%2F%2Fapi.mixcloud.com%2Fpopular%2F", function(data) {
+            printPre('api', prettyJson(data));
+        });
+    }
+</script>
 {% endblock %}
