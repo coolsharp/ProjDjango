@@ -1,11 +1,11 @@
 function printPre(elementId, url, data) {
     document.getElementById(elementId).innerHTML = '';
 
-    var obj = document.createElement('pre');
+    var obj = document.createElement('div');
     obj.style.cssText = 'border:0px';
 
     var element = document.getElementById(elementId).appendChild(obj);
-    element.innerHTML = '호출주소 : ' + decodeURIComponent(url);
+    element.innerHTML = '호출주소 : <a href="' + decodeURIComponent(url) + '" target="_blank">' + decodeURIComponent(url) + '</a>';
 
     var obj = document.createElement('pre');
     obj.style.cssText = 'border:0px';
