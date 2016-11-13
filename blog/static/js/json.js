@@ -1,9 +1,17 @@
-function printPre(elementId, data) {
+function printPre(elementId, url, data) {
+    document.getElementById(elementId).innerHTML = '';
+
     var obj = document.createElement('pre');
     obj.style.cssText = 'border:0px';
 
-    document.getElementById(elementId).innerHTML = '';
-    document.getElementById(elementId).appendChild(obj).innerHTML = data;
+    var element = document.getElementById(elementId).appendChild(obj);
+    element.innerHTML = '호출주소 : ' + decodeURIComponent(url);
+
+    var obj = document.createElement('pre');
+    obj.style.cssText = 'border:0px';
+
+    var element = document.getElementById(elementId).appendChild(obj);
+    element.innerHTML = data;
 }
 
 function prettyJson(data) {
