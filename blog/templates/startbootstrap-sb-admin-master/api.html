@@ -61,7 +61,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <Input type="button" onclick="getApi()"/>
+                                <Input type="button" onclick="getApi('url=https%3A%2F%2Fapi.mixcloud.com%2Fpopular%2F')" value="음악 API"/>
                             </td>
                         </tr>
                         </tbody>
@@ -78,8 +78,8 @@
 </div>
 <!-- /.row -->
 <script>
-    function getApi() {
-        $.get( "get/api/?url=https%3A%2F%2Fapi.mixcloud.com%2Fpopular%2F", function(data) {
+    function getApi(url) {
+        $.get( "get/api/?" + url, function(data) {
             printPre('api', prettyJson(data));
         });
     }
