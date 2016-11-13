@@ -2,7 +2,8 @@ function printPre(elementId, data) {
     var obj = document.createElement('pre');
     obj.style.cssText = 'border:0px';
 
-    document.getElementById(elementId).appendChild(obj).innerHTML += data;
+    document.getElementById(elementId).innerHTML = '';
+    document.getElementById(elementId).appendChild(obj).innerHTML = data;
 }
 
 function prettyJson(data) {
