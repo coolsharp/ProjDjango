@@ -5,7 +5,7 @@ function printPre(elementId, url, data) {
     obj.style.cssText = 'border:0px';
 
     var element = document.getElementById(elementId).appendChild(obj);
-    element.innerHTML = '호출주소 : <a href="' + decodeURIComponent(url) + '" target="_blank">' + decodeURIComponent(url) + '</a>';
+    element.innerHTML = '호출주소 : <a href="http://jsoneditoronline.org/index.html?url=' + decodeURIComponent(url) + '" target="_blank">' + decodeURIComponent(url) + '</a>';
 
     var obj = document.createElement('pre');
     obj.style.cssText = 'border:0px';
