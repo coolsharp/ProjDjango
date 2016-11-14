@@ -1,0 +1,73 @@
+<!-- 기본 페이지 -->
+{% extends 'coolsharp/api/base.html' %}
+<!-- 정적 파일 로드 -->
+{% load staticfiles %}
+
+<!-- 컨텐츠 시작 -->
+{% block api %}
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            API
+            <small>API Link Collection</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li class="active">
+                <i class="fa fa-dashboard"></i> 자주 사용하는 API를 모아두어 쉽게 호출해보는 페이지
+            </li>
+        </ol>
+        <table width="100%">
+            <thead>
+            <tr>
+                <th width="30%">
+                    <center>
+                        <div>API</div>
+                    </center>
+                </th>
+                <th width="70%">
+                    <center>
+                        <div>JSON</div>
+                    </center>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td valign="top">
+                    <table width="100%">
+                        <thead>
+                        <tr>
+                            <th rowspan="2">영역</th>
+                            <th>API</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td rowspan="5">인트로</td>
+                            <td>Event</td>
+                        </tr>
+                        <tr>
+                            <td>Utility co</td>
+                        </tr>
+                        <tr>
+                            <td>State name</td>
+                        </tr>
+                        <tr>
+                            <td>State name</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <Input type="button" onclick="getApi('https%3A%2F%2Fapi.mixcloud.com%2Fpopular%2F')" value="음악 API"/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+                <td>
+                    <div id="api"></div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
