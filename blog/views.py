@@ -8,7 +8,7 @@ import requests
 
 def post_list(request):
     posts = Post.objects.all()
-    return render(request, 'startbootstrap-sb-admin-master/api.html', {'posts': posts})
+    return render(request, 'coolsharp/api/base.html', {'posts': posts})
 
 
 def post_detail(request, pk):

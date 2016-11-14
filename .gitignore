@@ -54,3 +54,5 @@ fabric.properties
 # *.ipr
 *.pyc
 *.sqlite3
+*.xml
+*.iml
