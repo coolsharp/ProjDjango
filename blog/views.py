@@ -1,14 +1,16 @@
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
-from .models import Post
+from .models import Post, UrlData
 from .forms import PostForm
 from django.http import HttpResponse
 import requests
 
 
 def apiMain(request):
-    url = request.GET.get('url', '')
-    return render(request, 'coolsharp/api/main.html', {'value': url})
+    urlData = UrlData()
+    urlData.url = request.GET.get('url', '')
+    urlData.description = request.GET.get('description', '')
+    return render(request, 'coolsharp/api/main.html', {'urlData': urlData})
 
 
 def post_detail(request, pk):

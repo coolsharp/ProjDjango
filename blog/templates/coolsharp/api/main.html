@@ -7,7 +7,7 @@
 {% block api %}
 <div class="col-lg-12">
     <div class="alert alert-success" role="alert">
-        <i class="fa fa-link"></i> 최초 앱 시작시 호출하는 API 이다.
+        <i class="fa fa-link"></i> {{ urlData.description }}
         <br>
         <br>
         <div class="input-group">
@@ -15,7 +15,7 @@
                 <button class="btn btn-success" type="button" onclick="getApiByElementId('urlValue')">API 호출</button>
             </span>
 
-            <input type="text" class="form-control" id="urlValue" placeholder="호출할 API 주소를 입력하세요." value="{{ value }}">
+            <input type="text" class="form-control" id="urlValue" placeholder="호출할 API 주소를 입력하세요." value="{{ urlData.url }}">
             <span class="input-group-btn">
                 <button class="btn btn-danger" type="button">API 호출 & 스냅샷</button>
             </span>
