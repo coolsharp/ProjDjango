@@ -48,5 +48,12 @@
         });
     }
 
+    function getApiByElementId(elementId) {
+        var url = encodeURIComponent(document.getElementById(elementId).value);
+        $.get( "get/api/?url=" + url, function(data) {
+            printPre('api', url, prettyJson(data));
+        });
+    }
+
 </script>
 {% endblock %}
