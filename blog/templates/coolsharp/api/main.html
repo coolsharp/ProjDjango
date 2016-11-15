@@ -14,7 +14,8 @@
             <span class="input-group-btn">
                 <button class="btn btn-success" type="button" onclick="getApiByElementId('urlValue')">API 호출</button>
             </span>
-            <input type="text" class="form-control" id="urlValue" placeholder="호출할 API 주소를 입력하세요." value="https://api.mixcloud.com/popular/">
+
+            <input type="text" class="form-control" id="urlValue" placeholder="호출할 API 주소를 입력하세요." value="{{ value }}">
             <span class="input-group-btn">
                 <button class="btn btn-danger" type="button">API 호출 & 스냅샷</button>
             </span>

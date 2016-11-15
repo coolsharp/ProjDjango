@@ -6,9 +6,9 @@ from django.http import HttpResponse
 import requests
 
 
-def post_list(request):
-    posts = Post.objects.all()
-    return render(request, 'coolsharp/api/main.html', {'posts': posts})
+def apiMain(request):
+    url = request.GET.get('url', '')
+    return render(request, 'coolsharp/api/main.html', {'value': url})
 
 
 def post_detail(request, pk):
